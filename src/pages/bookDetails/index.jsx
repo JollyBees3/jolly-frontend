@@ -1,7 +1,11 @@
 
 const BookDetails = () => {
   return (
-    <div>BookDetails</div>
+    <section className="h-[100vh]">
+      <div className="border h-[60%] w-[80%] shadow-2xl ">
+
+      </div>
+    </section>
   )
 }
 
