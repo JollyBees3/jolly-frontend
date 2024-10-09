@@ -22,6 +22,10 @@ function App() {
       element: <AddBook />
     },
     {
+      path:"/booklist",
+      element:<BookList/>
+    },
+    {
       path: "/books/:id",
       element: <BookDetails />
     },

@@ -1,4 +1,5 @@
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 const UpdateBook = () => {
     return (
@@ -13,8 +14,8 @@ const UpdateBook = () => {
                         </div>
                         {/* Autor's name input */}
                         <div className="  flex flex-col mb-[0.5em] h-[7%] px-[2em] mt-[1em]">
-                            <label htmlFor="bookTitle" className="text-[1.3em]">Author's Name</label>
-                            <input id="bookTitle" type="text" className="p-[0.5em] w-[80%] h-[30%] border" placeholder="   Enter your name" required />
+                            <label htmlFor="bookTitle" className="text-[1.3em]">Author's Name<FontAwesomeIcon icon={faCircleExclamation} color="grey"/></label>
+                            <input id="bookTitle" type="text" className="p-[0.5em] w-[80%] h-[50%] border" placeholder="   Enter your name" required />
                         </div>
 
                         {/* Title input */}
