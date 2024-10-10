@@ -8,6 +8,7 @@ import SignUp from './pages/SignUp';
 import LogIn from './pages/login';
 import Hero from './pages/Hero';
 import UpdateBook from './pages/updatebook';
+import Authors from './pages/authors';
 // import AddBookForm from './components/AddBookForm';
 
 function App() {
@@ -40,6 +41,10 @@ function App() {
     {
       path:"/updatebook",
       element:<UpdateBook/>
+    },
+    {
+      path:"/authors",
+      element:<Authors/>
     }
   ]
   );
