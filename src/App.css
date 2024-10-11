@@ -33,7 +33,7 @@
   }
   
   #google_translate_element {
-    display: none; /* Initially hidden */
+    /* display: none; Initially hidden */
     background: white; /* Background color */
     border: 1px solid #ccc; /* Border */
     border-radius: 5px; /* Rounded corners */

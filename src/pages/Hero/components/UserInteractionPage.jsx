@@ -30,7 +30,7 @@ const UserInteractionPage = () => {
         {/* Book 2 */}
         <div className="bg-white p-4 shadow-lg rounded-lg flex flex-col items-center">
           <img src={image2} alt="Book 2" className="w-full h-64 object-cover mb-4 rounded" />
-          <Link to="/add-book" className="mb-2">
+          <Link to="/deletebook" className="mb-2">
             <button className="bg-blue-800 text-white py-2 px-4 rounded hover:bg-blue-500">Delete Book</button>
           </Link>
           

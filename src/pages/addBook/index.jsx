@@ -131,7 +131,7 @@ const AddBook = () => {
     // Fetch authors
     const getAuthors = async () => {
         try {
-            const response = await axios.get(`${BASE_URL}/getallauthors`);
+            const response = await axios.get(`${BASE_URL}/add-new`);
             setAuthors(response.data);
         } catch (err) {
             console.error("Error fetching authors:", err);

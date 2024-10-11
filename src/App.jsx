@@ -17,6 +17,7 @@ import Categories from "./pages/Hero/components/Categories";
 import CheckoutPage from "./pages/Hero/components/CheckoutPage";
 import FeaturedBooks from "./pages/Hero/components/FeaturedBooks";
 import ReviewsSection from "./pages/Hero/components/ReviewsSection";
+import DeleteBook from "./pages/deleteBook";
 // import Herro from "./pages/Hero/components/Herro";
 
 // import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -28,7 +29,7 @@ import ReviewsSection from "./pages/Hero/components/ReviewsSection";
 // import LogIn from './pages/login';
 // import Hero from './pages/Hero';
 // import UpdateBook from './pages/updatebook';
-import Authors from './pages/authors';
+
 // import AddBookForm from './components/AddBookForm';
 
 function App() {
@@ -118,10 +119,10 @@ function App() {
       {path:"/updatebook",
       element:<UpdateBook/>
     },
-    {
-      path:"/authors",
-      element:<Authors/>
-    },
+  {
+    path: "/deletebook",
+    element: <DeleteBook />
+  },
   ]);
   return <RouterProvider router={router} />
 }
