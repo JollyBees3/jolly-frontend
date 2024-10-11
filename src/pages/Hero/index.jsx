@@ -6,10 +6,16 @@ import Herro from "./components/Herro";
 import Categories from "./components/Categories";
 import FeaturedBooks from "./components/FeaturedBooks";
 
-const Hero = () => {
+const Hero = ({ user, setUser }) => {
+
+  const handleLogout = () => {
+    setUser(null); // Log out the user
+    alert("Are you sure you want to logout? Click ok to logout!");
+  };
+
   return (
     <div>
-      <Navbar1 />
+      <Navbar1 user={user} setUser={setUser} onLogout={handleLogout}/>
       <Herro />
       <About />
       <Categories />

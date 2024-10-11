@@ -4,3 +4,31 @@
     background-size: cover;
     padding-top: 10%;
 }
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%); /* Start off-screen */
+      opacity: 0;
+    }
+    50% {
+      opacity: 1; /* Gradually fade in */
+    }
+    100% {
+      transform: translateX(0); /* End at the original position */
+      opacity: 1;
+    }
+  }
+  
+  .hero-overlay h1,
+  .hero-overlay p {
+    animation: slideIn 2s ease-out forwards; /* 2s duration, ease-out effect */
+  }
+  
+  .hero-overlay h1 {
+    animation-delay: 0.5s; /* Delays the h1's animation */
+  }
+  
+  .hero-overlay p {
+    animation-delay: 1s; /* Delays the p tag's animation */
+  }
+  
