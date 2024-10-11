@@ -19,6 +19,18 @@ import FeaturedBooks from "./pages/Hero/components/FeaturedBooks";
 import ReviewsSection from "./pages/Hero/components/ReviewsSection";
 import Herro from "./pages/Hero/components/Herro";
 
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './App.css';
+import BookList from './pages/bookList';
+import AddBook from './pages/addBook';
+import BookDetails from './pages/bookDetails';
+import SignUp from './pages/SignUp';
+import LogIn from './pages/login';
+import Hero from './pages/Hero';
+import UpdateBook from './pages/updatebook';
+import Authors from './pages/authors';
+// import AddBookForm from './components/AddBookForm';
+
 function App() {
   const [user, setUser] = useState(""); // Manage user state here
 
@@ -101,9 +113,17 @@ function App() {
       path: "/reviews",
       element: <ReviewsSection />,
     },
-  ]);
 
-  return <RouterProvider router={router} />;
+
+      {path:"/updatebook",
+      element:<UpdateBook/>
+    },
+    {
+      path:"/authors",
+      element:<Authors/>
+    },
+  ]);
+  return <RouterProvider router={router} />
 }
 
 export default App;
