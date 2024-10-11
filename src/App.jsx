@@ -17,17 +17,17 @@ import Categories from "./pages/Hero/components/Categories";
 import CheckoutPage from "./pages/Hero/components/CheckoutPage";
 import FeaturedBooks from "./pages/Hero/components/FeaturedBooks";
 import ReviewsSection from "./pages/Hero/components/ReviewsSection";
-import Herro from "./pages/Hero/components/Herro";
+// import Herro from "./pages/Hero/components/Herro";
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './App.css';
-import BookList from './pages/bookList';
-import AddBook from './pages/addBook';
-import BookDetails from './pages/bookDetails';
-import SignUp from './pages/SignUp';
-import LogIn from './pages/login';
-import Hero from './pages/Hero';
-import UpdateBook from './pages/updatebook';
+// import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// import './App.css';
+// import BookList from './pages/bookList';
+// import AddBook from './pages/addBook';
+// import BookDetails from './pages/bookDetails';
+// import SignUp from './pages/SignUp';
+// import LogIn from './pages/login';
+// import Hero from './pages/Hero';
+// import UpdateBook from './pages/updatebook';
 import Authors from './pages/authors';
 // import AddBookForm from './components/AddBookForm';
 
