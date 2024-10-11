@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
 import B, { BASE_URL } from "../../constants/index.js";
 import SearchBar from "./components/SearchBar.jsx";
+import Navbar1 from "../../components/Navbar1.jsx";
 
 const BookList = () => {
 
-  return (
-
-    
+  return (    
 
     <section className="h-[100vh] ">
+      <Navbar1/>
       <div className="h-[20%] mt-[2em] flex flex-col gap-[1em]">
-        <div><h1 className="text-[2em] font-bold text-center mb-[1em]">Our Collection of Books</h1></div>
+        <div><h1 className="text-[2em] mt-[2em] font-bold text-center mb-[1em]">Our Collection of Books</h1></div>
 
         <SearchBar />
 
       </div>
-      <div className="h-[100%] mt-[4em] w-[60%] ml-[20%] grid grid-cols-4 grid-rows-2 gap-[2em]">
+      <div className="h-[100%] mt-[7em] w-[60%] ml-[20%] grid grid-cols-4 grid-rows-2 gap-[2em]">
         {
           B.BOOKS.map((book, index) => (
             <Link key={index}
@@ -36,4 +36,3 @@ const BookList = () => {
 };
 
 export default BookList;
-
