@@ -32,3 +32,12 @@
     animation-delay: 1s; /* Delays the p tag's animation */
   }
   
+  #google_translate_element {
+    display: none; /* Initially hidden */
+    background: white; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow */
+    z-index: 1000; /* Make sure it is on top */
+  }

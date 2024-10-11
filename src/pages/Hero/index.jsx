@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import Herro from "./components/Herro";
 import Categories from "./components/Categories";
 import FeaturedBooks from "./components/FeaturedBooks";
+import BlindAccessibleSection from "./components/BlindAccessibleSection";
 
 const Hero = ({ user, setUser }) => {
 
@@ -20,6 +21,7 @@ const Hero = ({ user, setUser }) => {
       <About />
       <Categories />
       <FeaturedBooks />
+      <BlindAccessibleSection />
       <Footer />
     </div>
   );
