@@ -28,7 +28,7 @@ const Footer = () => {
             <Link to="/categories" className="hover:text-blue-300">
               Categories
             </Link>
-            <Link to="/featured" className="hover:text-blue-300">
+            <Link to="/featuredbooks" className="hover:text-blue-300">
               Featured Books
             </Link>
             <Link to="/about" className="hover:text-blue-300">
@@ -70,7 +70,9 @@ const Footer = () => {
 
         {/* Contact Section */}
         <div className="flex flex-col mb-4 md:mb-0">
-          <span className="text-lg font-semibold mb-2 contact us">Contact Us:</span>
+          <span className="text-lg font-semibold mb-2 contact us">
+            Contact Us:
+          </span>
           <p>123 Library Lane, Booktown, BT1234</p>
           <p>
             <FontAwesomeIcon icon={faPhone} className="mr-2" />
@@ -86,7 +88,8 @@ const Footer = () => {
       {/* Copyright Section */}
       <div className="bg-gray-900 py-4 text-center">
         <p>
-          &copy; {new Date().getFullYear()} JB3 Library. All rights reserved.
+          &copy; {new Date().getFullYear()} JB3 Library. The website was created
+          by JollyBee3.
         </p>
       </div>
     </footer>
