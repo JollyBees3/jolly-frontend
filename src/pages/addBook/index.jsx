@@ -131,7 +131,7 @@ const AddBook = () => {
     // Fetch authors
     const getAuthors = async () => {
         try {
-            const response = await axios.get(`${BASE_URL}/add-new`);
+            const response = await axios.get(`${BASE_URL}/getallauthors`);
             setAuthors(response.data);
         } catch (err) {
             console.error("Error fetching authors:", err);
@@ -153,7 +153,7 @@ const AddBook = () => {
             const newBook = {
                 title: formData.get("title"),
                 author: formData.get("author"),
-                body: formData.get("body"),
+                Body: formData.get("body"),
             };
 
             // Post the new book to the API
