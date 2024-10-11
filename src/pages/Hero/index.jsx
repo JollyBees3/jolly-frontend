@@ -6,6 +6,7 @@ import Herro from "./components/Herro";
 import Categories from "./components/Categories";
 import FeaturedBooks from "./components/FeaturedBooks";
 import BlindAccessibleSection from "./components/BlindAccessibleSection";
+import UserInteractionPage from "./components/UserInteractionPage";
 
 const Hero = ({ user, setUser }) => {
 
@@ -22,6 +23,7 @@ const Hero = ({ user, setUser }) => {
       <Categories />
       <FeaturedBooks />
       <BlindAccessibleSection />
+      <UserInteractionPage />
       <Footer />
     </div>
   );
