@@ -7,13 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const DeleteBook = () => {
-    const [books, setBooks] = useState([]); // State to hold available books
-    const navigate = useNavigate(); // For navigation
+    const [books, setBooks] = useState([]);
+    const navigate = useNavigate(); 
 
     // Fetch available books
     const getBooks = async () => {
         try {
-            const response = await axios.get(`${BASE_URL}/delete/:id`); // Adjust this endpoint as necessary
+            const response = await axios.get(`${BASE_URL}/delete/:id`); 
             setBooks(response.data);
         } catch (error) {
             console.error("Error fetching books:", error);
@@ -23,9 +23,9 @@ const DeleteBook = () => {
     // Delete a book by ID
     const deleteBook = async (bookId) => {
         try {
-            await axios.delete(`${BASE_URL}/delete/:id/${bookId}`); // Adjust this endpoint as necessary
-            setBooks(books.filter((book) => book._id !== bookId)); // Update the state to remove the deleted book
-            alert("Book deleted successfully!"); // Alert the user
+            await axios.delete(`${BASE_URL}/delete/:id/${bookId}`); 
+            setBooks(books.filter((book) => book._id !== bookId));
+            alert("Book deleted successfully!"); 
         } catch (error) {
             console.error("Error deleting book:", error);
             alert("Failed to delete the book. Please try again.");
